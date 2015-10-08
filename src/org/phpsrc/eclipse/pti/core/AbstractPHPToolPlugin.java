@@ -8,7 +8,9 @@
 
 package org.phpsrc.eclipse.pti.core;
 
+import java.io.File;
 import java.io.IOException;
+import java.net.MalformedURLException;
 import java.net.URL;
 
 import org.eclipse.core.resources.IFile;
@@ -23,6 +25,14 @@ import org.phpsrc.eclipse.pti.ui.Logger;
 public abstract class AbstractPHPToolPlugin extends AbstractUIPlugin {
 	public URL resolvePluginResourceURL(String resource) {
 		URL u = getBundle().getEntry(resource);
+		if (u == null) {
+			try {
+				u = new File(resource).toURI().toURL();
+			} catch (MalformedURLException e) {
+				e.printStackTrace();
+			}
+		}
+		
 		if (u != null) {
 			try {
 				return FileLocator.resolve(u);
