@@ -1,8 +1,5 @@
 PHP Tool Integration Core
-====================
+=========================
 
-This's the core part of PHP Tool and is already in any PHP Tool plugin. There is no need to install this module explicitly.    
+This's the core part of PHP Tool and is already in any PHP Tool plugin. There is no need to install this module explicitly.
 
-== ToDo
-
-== FAQ
