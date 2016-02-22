@@ -1,9 +1,9 @@
 Manifest-Version: 1.0
 Bundle-ManifestVersion: 2
 Bundle-Name: PHP Tool Integration Core
-Bundle-SymbolicName: org.phpsrc.eclipse.pti.core;singleton:=true
+Bundle-SymbolicName: net.overscale.eclipse.pti.core;singleton:=true
 Bundle-Version: 1.6.0.R20110619000000
-Bundle-Activator: org.phpsrc.eclipse.pti.core.PHPToolCorePlugin
+Bundle-Activator: net.overscale.eclipse.pti.core.PHPToolCorePlugin
 Bundle-Vendor: Sven Kiera
 Require-Bundle: org.eclipse.core.runtime;bundle-version="3.7.0",
  org.eclipse.php.core;bundle-version="3.0.0",
@@ -18,27 +18,27 @@ Require-Bundle: org.eclipse.core.runtime;bundle-version="3.7.0",
  org.eclipse.jface.text;bundle-version="3.7.0",
  org.eclipse.ui.workbench.texteditor;bundle-version="3.7.0",
  org.eclipse.ui.ide;bundle-version="3.7.0"
-Bundle-RequiredExecutionEnvironment: J2SE-1.5
+Bundle-RequiredExecutionEnvironment: JavaSE-1.7
 Bundle-ActivationPolicy: lazy
 Export-Package: org.json,
- org.phpsrc.eclipse.pti.core,
- org.phpsrc.eclipse.pti.core.compiler.problem,
- org.phpsrc.eclipse.pti.core.jobs,
- org.phpsrc.eclipse.pti.core.launching,
- org.phpsrc.eclipse.pti.core.listener,
- org.phpsrc.eclipse.pti.core.php.inifile,
- org.phpsrc.eclipse.pti.core.php.source,
- org.phpsrc.eclipse.pti.core.preferences,
- org.phpsrc.eclipse.pti.core.search,
- org.phpsrc.eclipse.pti.core.search.ui.dialogs,
- org.phpsrc.eclipse.pti.core.tools,
- org.phpsrc.eclipse.pti.ui,
- org.phpsrc.eclipse.pti.ui.actions,
- org.phpsrc.eclipse.pti.ui.dialogs,
- org.phpsrc.eclipse.pti.ui.images,
- org.phpsrc.eclipse.pti.ui.preferences,
- org.phpsrc.eclipse.pti.ui.preferences.dialogfields,
- org.phpsrc.eclipse.pti.ui.viewsupport,
- org.phpsrc.eclipse.pti.ui.widgets,
- org.phpsrc.eclipse.pti.ui.widgets.listener,
- org.phpsrc.eclipse.pti.ui.wizards.fields
+ net.overscale.eclipse.pti.core,
+ net.overscale.eclipse.pti.core.compiler.problem,
+ net.overscale.eclipse.pti.core.jobs,
+ net.overscale.eclipse.pti.core.launching,
+ net.overscale.eclipse.pti.core.listener,
+ net.overscale.eclipse.pti.core.php.inifile,
+ net.overscale.eclipse.pti.core.php.source,
+ net.overscale.eclipse.pti.core.preferences,
+ net.overscale.eclipse.pti.core.search,
+ net.overscale.eclipse.pti.core.search.ui.dialogs,
+ net.overscale.eclipse.pti.core.tools,
+ net.overscale.eclipse.pti.ui,
+ net.overscale.eclipse.pti.ui.actions,
+ net.overscale.eclipse.pti.ui.dialogs,
+ net.overscale.eclipse.pti.ui.images,
+ net.overscale.eclipse.pti.ui.preferences,
+ net.overscale.eclipse.pti.ui.preferences.dialogfields,
+ net.overscale.eclipse.pti.ui.viewsupport,
+ net.overscale.eclipse.pti.ui.widgets,
+ net.overscale.eclipse.pti.ui.widgets.listener,
+ net.overscale.eclipse.pti.ui.wizards.fields

@@ -2,8 +2,7 @@
 <?eclipse version="3.4"?>
 <plugin>
 	<extension point="org.eclipse.debug.core.launchConfigurationTypes">
-		<launchConfigurationType
-			id="org.phprc.eclipse.pti.core.launching.PHPToolLaunchType"
+		<launchConfigurationType id="org.phprc.eclipse.pti.core.launching.PHPToolLaunchType"
 			delegate="org.eclipse.php.internal.debug.core.launching.PHPLaunchDelegateProxy"
 			modes="run"
 			name="PHP Tool Application"
@@ -12,24 +11,22 @@
 			delegateDescription="This Application Launcher supports running and debugging PHP applications.">
 		</launchConfigurationType>
 	</extension>
-	<extension
-		point="org.eclipse.ui.preferencePages">
-		<page
-			class="org.phpsrc.eclipse.pti.ui.preferences.PHPToolsPreferencePage"
-			id="org.phpsrc.eclipse.pti.ui.preferences.PHPToolsPreferencePage"
+	
+	<extension point="org.eclipse.ui.preferencePages">
+		<page class="net.overscale.eclipse.pti.ui.preferences.PHPToolsPreferencePage"
+			id="net.overscale.eclipse.pti.ui.preferences.PHPToolsPreferencePage"
 			name="PHP Tools">
 		</page>
-		<page
-			category="org.phpsrc.eclipse.pti.ui.preferences.PHPToolsPreferencePage"
-			class="org.phpsrc.eclipse.pti.ui.preferences.PHPToolsLibraryPreferencePage"
-			id="org.phpsrc.eclipse.pti.ui.preferences.PHPToolsLibraryPreferencePage"
+		<page category="net.overscale.eclipse.pti.ui.preferences.PHPToolsPreferencePage"
+			class="net.overscale.eclipse.pti.ui.preferences.PHPToolsLibraryPreferencePage"
+			id="net.overscale.eclipse.pti.ui.preferences.PHPToolsLibraryPreferencePage"
 			name="Library">
 		</page>
 	</extension>
+	
 	<extension point="org.eclipse.ui.propertyPages">
-		<page
-			class="org.phpsrc.eclipse.pti.ui.preferences.PHPToolsPreferencePage"
-			id="org.phpsrc.eclipse.pti.ui.propertyPages.PHPToolsPreferencePage"
+		<page class="net.overscale.eclipse.pti.ui.preferences.PHPToolsPreferencePage"
+			id="net.overscale.eclipse.pti.ui.propertyPages.PHPToolsPreferencePage"
 			name="PHP Tools">
 			<enabledWhen>
 				<adapt type="org.eclipse.core.resources.IProject">
@@ -40,10 +37,8 @@
 	</extension>
 
 	<extension point="org.eclipse.ui.menus">
-		<menuContribution
-			locationURI="popup:org.eclipse.ui.popup.any?after=additions">
-			<menu
-				id="org.phpsrc.eclipse.pti.ui.menus.phptools"
+		<menuContribution locationURI="popup:org.eclipse.ui.popup.any?after=additions">
+			<menu id="net.overscale.eclipse.pti.ui.menus.phptools"
 				label="PHP Tools"
 				icon="icons/full/obj16/phpsrc.gif">
 			</menu>
