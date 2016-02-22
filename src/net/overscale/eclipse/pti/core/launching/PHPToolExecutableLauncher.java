@@ -119,8 +119,7 @@ public class PHPToolExecutableLauncher {
 		ArrayList<String> newCmdLineList = new ArrayList<String>(cmdLine.length);
 		for (int i = 0; i < cmdLine.length; ++i) {
 			if (!cmdLine[i].equals("-n"))
-				newCmdLineList.add(cmdLine[i].replace(
-						OperatingSystem.PLACEHOLDER_WHITESPACE, ' '));
+				newCmdLineList.add(cmdLine[i]);
 		}
 		cmdLine = newCmdLineList.toArray(new String[0]);
 

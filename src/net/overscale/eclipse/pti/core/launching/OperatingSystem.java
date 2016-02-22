@@ -13,8 +13,7 @@ public class OperatingSystem {
 	public static final boolean LINUX = java.io.File.separatorChar == '/'; //$NON-NLS-1$
 	public static final boolean MAC = System
 			.getProperty("os.name").startsWith("Mac"); //$NON-NLS-1$
-	public static final char PLACEHOLDER_WHITESPACE = '�';
-
+	
 	public static String escapeShellArg(String arg) {
 		if (WINDOWS) {
 			return "\"" + arg.replace("\"", "\\\"") + "\"";
@@ -28,8 +27,8 @@ public class OperatingSystem {
 	public static String escapeShellFileArg(String fileName) {
 		if (WINDOWS)
 			return "\"" + fileName.replace("\"", "\\\"") + "\"";
-		else
-			return fileName.replace(' ', PLACEHOLDER_WHITESPACE);
+
+		return fileName;
 	}
 
 	public static String escapePHPFileArg(String fileName) {
