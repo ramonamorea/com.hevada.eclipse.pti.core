@@ -13,20 +13,20 @@
 	</extension>
 	
 	<extension point="org.eclipse.ui.preferencePages">
-		<page class="net.overscale.eclipse.pti.ui.preferences.PHPToolsPreferencePage"
-			id="net.overscale.eclipse.pti.ui.preferences.PHPToolsPreferencePage"
+		<page class="com.hevada.eclipse.pti.ui.preferences.PHPToolsPreferencePage"
+			id="com.hevada.eclipse.pti.ui.preferences.PHPToolsPreferencePage"
 			name="PHP Tools">
 		</page>
-		<page category="net.overscale.eclipse.pti.ui.preferences.PHPToolsPreferencePage"
-			class="net.overscale.eclipse.pti.ui.preferences.PHPToolsLibraryPreferencePage"
-			id="net.overscale.eclipse.pti.ui.preferences.PHPToolsLibraryPreferencePage"
+		<page category="com.hevada.eclipse.pti.ui.preferences.PHPToolsPreferencePage"
+			class="com.hevada.eclipse.pti.ui.preferences.PHPToolsLibraryPreferencePage"
+			id="com.hevada.eclipse.pti.ui.preferences.PHPToolsLibraryPreferencePage"
 			name="Library">
 		</page>
 	</extension>
 	
 	<extension point="org.eclipse.ui.propertyPages">
-		<page class="net.overscale.eclipse.pti.ui.preferences.PHPToolsPreferencePage"
-			id="net.overscale.eclipse.pti.ui.propertyPages.PHPToolsPreferencePage"
+		<page class="com.hevada.eclipse.pti.ui.preferences.PHPToolsPreferencePage"
+			id="com.hevada.eclipse.pti.ui.propertyPages.PHPToolsPreferencePage"
 			name="PHP Tools">
 			<enabledWhen>
 				<adapt type="org.eclipse.core.resources.IProject">
@@ -36,9 +36,12 @@
 		</page>
 	</extension>
 
-	<extension point="org.eclipse.ui.menus">
+	<extension
+       id="com.hevada.eclipse.pti.tools.codesniffer.Core"
+       name="PHP CodeSniffer Core"
+       point="org.eclipse.ui.menus">
 		<menuContribution locationURI="popup:org.eclipse.ui.popup.any?after=additions">
-			<menu id="net.overscale.eclipse.pti.ui.menus.phptools"
+			<menu id="com.hevada.eclipse.pti.ui.menus.phptools"
 				label="PHP Tools"
 				icon="icons/full/obj16/phpsrc.gif">
 			</menu>
