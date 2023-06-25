@@ -1,5 +1,5 @@
 PHP Tool Integration Core
 =========================
 
-This's the core part of PHP Tool and is already in any PHP Tool plugin. There is no need to install this module explicitly.
+This is the core part of PHP Tool and is already in any PHP Tool plugin. There is no need to install this module explicitly. This fork contains updates for ompatibility with latest Java.
 
